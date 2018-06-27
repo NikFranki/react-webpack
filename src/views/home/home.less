@@ -1,0 +1,33 @@
+@import '../../styles/app.less';
+
+@simple-blue: #5B83AD;
+@light-blue: @simple-blue + #111;
+
+.haha {
+    color: @light-blue;
+}
+
+@min768: ~"(max-width: 768px)";
+.haha {
+    @media @min768 {
+        font-size: 1.2rem;
+    }
+
+    .ss {
+        width: 100%;
+        height: 400px;
+        background: url('../../assets/images/ramos.jpg') no-repeat center center;
+        background-size: 100% auto;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    button:first-child {
+        margin-right: 30px;
+    }
+}
+
+
