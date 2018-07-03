@@ -7,7 +7,7 @@
 /coverage
 
 # production
-/trade
+/dist
 
 # misc
 .DS_Store

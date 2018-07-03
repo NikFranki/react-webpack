@@ -1,0 +1,85 @@
+.happy_music {
+    header {
+        margin: 5px 50px;
+        border-bottom: 1px solid #ddd;
+        section:first-child {
+            font-size: 18px;
+        }
+    }
+    main {
+        display: flex;
+        align-items: center;
+        height: 70vh;
+        .outer_circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin: 0 auto;
+            background: #000;
+            .inner_circle {
+                width: 230px;
+                height: 230px;
+                border-radius: 50%;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center center;
+            }
+            .inner_circle.active {
+                .inner_circle;
+                animation: innercirclestyle 30s linear infinite;
+            }
+        }
+    }
+    footer {
+        .like_control {
+            padding: 20px 20%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .basebar {
+            position: relative;
+            width: 80%;
+            height: 3px;
+            background: #ddd;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            .left_progress {
+                position: absolute;
+                top: -7px;
+                left: -11%;
+                font-size: 12px;
+            }
+            .progressbar {
+                display: block;
+                width: 0;
+                background: red;
+                height: 3px;
+            }
+            .right_progress {
+                position: absolute;
+                top: -7px;
+                right: -11%;
+                font-size: 12px;
+            }
+        }
+        .play_control {
+            width: 87%;
+            padding: 10px 0;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+@keyframes innercirclestyle {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
