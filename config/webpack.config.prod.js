@@ -196,7 +196,11 @@ const config = {
                 warning: "verbose",
                 ecma: 6,
                 beautify: false,
-                compress: false,
+                compress: {
+                    warnings: false,
+                    drop_debugger: true,
+                    drop_console: true
+                },
                 comments: false,
                 mangle: false,
                 toplevel: false,
@@ -216,7 +220,7 @@ const config = {
         optimizationBailout: true
     },
     devtool: 'inline-source-map',
-    mode: 'development',
+    mode: 'production',
     node: {
         dgram: 'empty',
         fs: 'empty',

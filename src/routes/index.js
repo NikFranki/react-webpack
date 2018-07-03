@@ -9,6 +9,7 @@ import {
 // 组件
 import Home from '../views/home/home';
 import About from '../views/about/about';
+import HappyMusic from '../views/happymusic/happymusic';
 import Topics from '../views/topics/topics';
 
 
@@ -22,6 +23,7 @@ const routes = <Router basename="/" >
         <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
+            <Route path="/music" component={HappyMusic} />
             <Redirect from="/accounts" to="/about" />
             <Route path="/topics" component={Topics} />
         </Switch>
