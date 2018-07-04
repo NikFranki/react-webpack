@@ -1,4 +1,13 @@
-
+<p align="center">
+  <a href="https://github.com/facebook/react"><img src="https://img.shields.io/badge/react-v16.4.1-blue.svg" alt="react"></a>
+  <a href="https://github.com/facebook/react-dom"><img src="https://img.shields.io/badge/react--dom-v16.4.1-blue.svg" alt="react-dom"></a>
+  <a href="https://reacttraining.com/react-router"><img src="https://img.shields.io/badge/react--router--dom-v4.3.1-blue.svg" alt="react-router-dom"></a>
+  <a href="https://github.com/mobxjs/mobx"><img src="https://img.shields.io/badge/mobx-v5.0.3-blue.svg" alt="mobx"></a>
+  <a href="https://github.com/mobxjs/mobx-react"><img src="https://img.shields.io/badge/mobx--react-v5.2.3-blue.svg" alt="mobx-react"></a>
+  <a href="https://github.com/less/less.js"><img src="https://img.shields.io/badge/less-v3.0.4-blue.svg" alt="less"></a>
+  <a href="https://github.com/axios/axios"><img src="https://img.shields.io/badge/axios-v0.18.0-blue.svg" alt="axios"></a>
+  <a href="https://github.com/webpack/webpack"><img src="https://img.shields.io/badge/webpack-v4.12.0-blue.svg" alt="webpack"></a>
+</p>
 
 # 尝试特性，从”新“开始
 
