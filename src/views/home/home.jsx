@@ -24,12 +24,10 @@ class Home extends Component {
         }, 1500);
     }
 
-    jumpPage = () => {
-        this.props.history.push('/about');
-    }
-
-    jumpToMusic = () => {
-        this.props.history.push('/music');
+    jumpPage = (url) => {
+        return e => {
+            this.props.history.push(url);
+        }
     }
 
     renderHomeItem = (store) => {
@@ -38,9 +36,11 @@ class Home extends Component {
                         </div>
                         <div>牛掰啊，franki</div>
                         <br />
-                        <a onClick={this.jumpPage}>跳转about</a>
+                        <a onClick={this.jumpPage('/about')}>跳转about</a>
                         <br />
-                        <a onClick={this.jumpToMusic}>进入<strong>开心音乐</strong></a>
+                        <a onClick={this.jumpPage('/music')}>进入<strong>开心音乐</strong></a>
+                        <br />
+                        <a onClick={this.jumpPage('/singer')}>进入歌手页</a>
                         <br />
                         <p>
                             <button onClick={() => store.default.plus()}>+</button>
