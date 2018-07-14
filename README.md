@@ -92,12 +92,10 @@ react-webpack
 |   └───views 业务组件
 ```
 
-# 效果
+## 效果
 
-![image](http://p2bmmf3zh.bkt.clouddn.com/hm.gif)
+<img src="http://p2bmmf3zh.bkt.clouddn.com/hp.png" alt="image" width="375" height="667" />>
 
 ## License
 
 MIT (c) 2018
-
-
