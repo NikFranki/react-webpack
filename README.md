@@ -94,8 +94,7 @@ react-webpack
 
 ## 效果
 
-<img src="http://p2bmmf3zh.bkt.clouddn.com/hp.png" alt="image" width="375" height="667" />>
-
+<img src="http://p2bmmf3zh.bkt.clouddn.com/hp.png" alt="image" width="375" height="667" />
 
 ## License
 
