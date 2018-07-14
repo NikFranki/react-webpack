@@ -1,0 +1,30 @@
+.progress-bar {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    .progress-load, .progress, .progress-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+    .progress-load {
+        z-index: 1;
+    }
+    .progress {
+        z-index: 2;
+        background-color: red;
+    }
+    .progress-button {
+        width: 14px;
+        height: 14px;
+        border: 2px solid #FFFFFF;
+        border-radius: 50%;
+        box-sizing: border-box;
+        background-color: red;
+        z-index: 3;
+        top: -6px;
+        margin-left: -5px;
+    }
+}

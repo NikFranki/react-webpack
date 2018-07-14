@@ -1,0 +1,118 @@
+@fff: #fff;
+.pop_up {
+    .popup {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 241px;
+        background: #2c2c2c;
+        transition: transform .3s linear;
+        z-index: 1000;
+    }
+
+    .pop_bg {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .3);
+        z-index: 999;
+        opacity: 1;
+        transition: opacity .3s linear;
+    }
+
+    .pop_bg_hide {
+        opacity: 0;
+        transition: opacity .3s linear;
+    }
+
+    .popup_show {
+        .popup;
+        transform: translateY(0);
+        .popup_wrap {
+            .popup_head {
+                position: relative;
+                height: 40px;
+                line-height: 40px;
+                font-size: 16px;
+                color: @fff;
+                font-weight: 400;
+                display: flex;
+                .head_title {
+                    margin-left: 10px;
+                }
+                .close {
+                    position: absolute;
+                    right: 0;
+                    margin-right: 20px;
+                }
+                &:after {
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    width: 100%;
+                    height: 3px;
+                    background: #827e7e;
+                    transform: scaleY(0.5);
+                }
+            }
+            .popup_list {
+                ul {
+                    li {
+                        display: flex;
+                        font-size: 16px;
+                        .left_area, .right_area {
+                            color: @fff;
+                            height: 50px;
+                        }
+                        .left_area {
+                            flex: 1;
+                            padding-left: 10px;
+                            line-height: 50px;
+                        }
+                        .right_area {
+                            position: relative;
+                            flex: 10;
+                            display: inline-flex;
+                            justify-content: space-between;
+                            padding-top: 2px;
+                            padding-right: 25px;
+                            .expression {
+                                color: @fff;
+                                p {
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                                &.active {
+                                    color:#fff68f;
+                                } 
+                            }
+                            .operation {
+                                line-height: 50px;
+                            }
+                            &:after {
+                                position: absolute;
+                                content: "";
+                                bottom: 0;
+                                width: 100%;
+                                height: 1px;
+                                background: #ccc;
+                                transform: scaleY(0.5);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .popup_hide {
+        .popup;
+        transform: translateY(241px);
+    }
+}

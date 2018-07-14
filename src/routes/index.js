@@ -10,6 +10,7 @@ import {
 import Home from '../views/home/home';
 import About from '../views/about/about';
 import HappyMusic from '../views/happymusic/happymusic';
+import Singer from '../views/happymusic/singer/singer.jsx';
 import Topics from '../views/topics/topics';
 
 
@@ -24,6 +25,7 @@ const routes = <Router basename="/" >
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/music" component={HappyMusic} />
+            <Route path="/singer" component={Singer} />
             <Redirect from="/accounts" to="/about" />
             <Route path="/topics" component={Topics} />
         </Switch>
