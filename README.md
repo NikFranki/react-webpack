@@ -94,7 +94,7 @@ react-webpack
 
 ## 效果
 
-![image](http://p2bmmf3zh.bkt.clouddn.com/hmss.gif)
+![image](http://qiniu.sevenyuan.cn/hmss.gif)
 
 ## License
 
